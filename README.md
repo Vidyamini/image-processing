@@ -75,5 +75,26 @@ cv2.imshow('Mean',mean)
 cv2.waitKey()
 
 Output:
+![image](https://user-images.githubusercontent.com/72515142/104432326-eb94cc80-55ae-11eb-8f60-ba7149fa8f50.png)
+
+4.Convert color image to Gray scale and binary image
+
+   Gray scale image - is simply one in which the only colors are shades of gray.
+   binary image -  is one that consists of pixels that can have one of exactly two colors, usually black and white. 
+   cv2.threshold() -  is the assignment of pixel values in relation to the threshold value provided.
+   
+  
+import cv2 
+image=cv2.imread("dog.jpg")
+gray_img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+cv2.imshow('gray scale',gray_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+ret,bw_image=cv2.threshold(image,127,255,cv2.THRESH_BINARY)
+cv2.imshow('Binary Image',bw_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+Output:
 
   

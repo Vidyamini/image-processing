@@ -18,7 +18,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/72515142/104429740-f7cb5a80-55ab-11eb-8986-5589c67bb648.png)
   
 2.Develop a program to perform Linear Transformation on image(Scaling and Rotation).
-Scaling:is a process of modifying or altering the size of objects.
+  Scaling:is a process of modifying or altering the size of objects.
      import cv2 
      import numpy as np
      img=cv2.imread('dog.jpg')
@@ -56,6 +56,7 @@ Output:
      os.listdir() -  returns a list containing the names of the entries in the directory given by path.
      sum -  add a constant value to an image.
      mean - will give you an idea of what pixel color to choose to summarize the color of the complete image.
+     
 import cv2
 import os
 path ="D:\images"
@@ -120,6 +121,8 @@ Output:
 6. Develop a program to create an image from 2D array generate an array of    
     random size.
    np.linspace() -  is an in-built function in Python's NumPy library. It is used to create an evenly spaced sequence in a specified interval.
+   Image.fromarray() - This function converts a numerical (integer or float) numpy array of any size and dimensionality into a CASA image.
+   np.reshape() - function shapes an array without changing data of array.
    
 import numpy as np
 from PIL import Image
@@ -132,6 +135,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/72515142/104434173-edf82600-55b0-11eb-8593-83fef427c5a0.png)
 
 7.program to find the neighbor of matrix.
+
 X = [[1,2,3], [4 ,5,6], [7 ,8,9]] 
 Y = [[9,8,7], [6,5,4], [3,2,1]] 
 result = [[0,0,0], [0,0,0], [0,0,0]] 
@@ -152,6 +156,7 @@ OUTPUT:
 ![image](https://user-images.githubusercontent.com/72515142/104434455-3f081a00-55b1-11eb-8b89-d8d63dacb192.png)
 
 8. Program to find the Sum of neighbour value of Matrix.
+
 import numpy as np
 M = [[1, 2, 3],
     [4, 5, 6],
@@ -178,6 +183,9 @@ Output:
 ![image](https://user-images.githubusercontent.com/72515142/104434732-8ee6e100-55b1-11eb-943d-875a018610cb.png)
 
 9. Operator Overloading in C++:Assignment operator of 2 Matrix.
+
+     C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading.
+     Assignment operator - are used to assigning value to a variable.
 #include <iostream>
 int findSum(int n) 
 { 

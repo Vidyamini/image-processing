@@ -52,6 +52,10 @@ Output:
 3. Develop a program to find sum and mean of a set of images.
     (i)Create ‘n’ number of images and read the directory and perform  
      Operation.
+     
+     os.listdir() -  returns a list containing the names of the entries in the directory given by path.
+     sum -  add a constant value to an image.
+     mean - will give you an idea of what pixel color to choose to summarize the color of the complete image.
 import cv2
 import os
 path ="D:\images"
@@ -69,5 +73,7 @@ cv2.imshow('Sum',im)
 mean=im/len(dirs.)
 cv2.imshow('Mean',mean)
 cv2.waitKey()
+
+Output:
 
   

@@ -112,5 +112,7 @@ cv2.imshow('LAB image',lab)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
+Output:
+![image](https://user-images.githubusercontent.com/72515142/104433426-17fd1880-55b0-11eb-83af-03a910b45cb3.png)
 
   

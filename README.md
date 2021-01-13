@@ -207,4 +207,4 @@ int main() {
 }
 
 Ouput:
-
+![image](https://user-images.githubusercontent.com/72515142/104434963-df5e3e80-55b1-11eb-89d3-ae2670919e5e.png)

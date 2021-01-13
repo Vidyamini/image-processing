@@ -17,6 +17,19 @@ cv2.imwrite() - used to save an image to any storage device.
 Output:
 ![image](https://user-images.githubusercontent.com/72515142/104429740-f7cb5a80-55ab-11eb-8986-5589c67bb648.png)
   
+2.Develop a program to perform Linear Transformation on image(Scaling and Rotation).
+Scaling:
+import cv2 
+import numpy as np
+img=cv2.imread('dog.jpg')
+(height,width)=img.shape[:2]
+res=cv2.resize(img, (int(width/2), int(height/2)), interpolation=cv2.INTER_CUBIC)
+cv2.imwrite('result.jpg',res)
+cv2.imshow('Result',res)
+cv2.imshow('image',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
 
   
 

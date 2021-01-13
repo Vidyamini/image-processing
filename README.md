@@ -99,6 +99,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/72515142/104433157-c8b6e800-55af-11eb-9e1f-9bf99153bf25.png)
 
 5.Develop a program to convert color image into different color space.
+   Color Space - is a specific organization of colors.
 import cv2 
 image=cv2.imread("dog.jpg")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -114,5 +115,19 @@ cv2.destroyAllWindows()
 
 Output:
 ![image](https://user-images.githubusercontent.com/72515142/104433426-17fd1880-55b0-11eb-83af-03a910b45cb3.png)
+![image](https://user-images.githubusercontent.com/72515142/104433589-47ac2080-55b0-11eb-848c-97d4cbe7401b.png)
+
+6. Develop a program to create an image from 2D array generate an array of    
+    random size.
+   np.linspace() -  is an in-built function in Python's NumPy library. It is used to create an evenly spaced sequence in a specified interval.
+   
+import numpy as np
+from PIL import Image
+array=np.linspace(0,1,256*256)
+mat=np.reshape(array,(256,256))
+img=Image.fromarray(mat,'HSV')
+img.show()
+
+Output:
 
   

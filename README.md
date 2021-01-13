@@ -47,5 +47,27 @@ Rotation:is a conversion from one coordinate space onto another.
     cv2.destroyAllWindows()
 
 Output:
+![image](https://user-images.githubusercontent.com/72515142/104431217-a754fc80-55ad-11eb-8e06-dd6de1fae7e8.png)
+
+3. Develop a program to find sum and mean of a set of images.
+    (i)Create ‘n’ number of images and read the directory and perform  
+     Operation.
+import cv2
+import os
+path ="D:\images"
+imgs=[]
+dirs=os.listdir(path)
+for file in dirs:
+    fpath=path+"\\"+file
+    imgs.append(cv2.imread(fpath))
+i=0
+for im in imgs:
+  cv2.imshow(dirs[i],imgs[i])
+  i=i+1
+  print(i)
+cv2.imshow('Sum',im)
+mean=im/len(dirs.)
+cv2.imshow('Mean',mean)
+cv2.waitKey()
 
   

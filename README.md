@@ -15,7 +15,7 @@ cv2.imwrite() - used to save an image to any storage device.
          cv2.destroyAllWindows()
 
 Output:
-
+![image](https://user-images.githubusercontent.com/72515142/104429740-f7cb5a80-55ab-11eb-8986-5589c67bb648.png)
   
 
   

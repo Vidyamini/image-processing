@@ -96,5 +96,21 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 Output:
+![image](https://user-images.githubusercontent.com/72515142/104433157-c8b6e800-55af-11eb-9e1f-9bf99153bf25.png)
+
+5.Develop a program to convert color image into different color space.
+import cv2 
+image=cv2.imread("dog.jpg")
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+hsv=cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
+lab=cv2.cvtColor(image,cv2.COLOR_BGR2LAB)
+cv2.imshow('GRAY IMAGE',gray)
+cv2.waitKey(0)
+cv2.imshow('HSV iamge',hsv)
+cv2.waitKey(0)
+cv2.imshow('LAB image',lab)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
 
   

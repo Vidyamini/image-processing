@@ -175,4 +175,36 @@ print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
 
 Output:
+![image](https://user-images.githubusercontent.com/72515142/104434732-8ee6e100-55b1-11eb-943d-875a018610cb.png)
+
+9. Operator Overloading in C++:Assignment operator of 2 Matrix.
+#include <iostream>
+int findSum(int n) 
+{ 
+    // Generate matrix 
+    int a[100][100],b[100][100]; 
+    for (int i = 0; i < n; i++) 
+        for (int j = 0; j < n; j++) 
+            std::cin>>a[i][j] ; 
+    for (int i = 0; i < n; i++) 
+        for (int j = 0; j < n; j++)
+            b[i][j]=a[i][j];
+    // Compute sum 
+    int sum = 0; 
+    for (int i = 0; i < n; i++) 
+        for (int j = 0; j < n; j++) 
+            sum += b[i][j]; 
+            std::cout <<"sum of elements: ";
+  
+    return sum; 
+} 
+int main() {
+    int n = 3; 
+    std::cout << findSum(n) ; 
+    return 0; 
+
+   
+}
+
+Ouput:
 
